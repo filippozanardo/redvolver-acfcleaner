@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Redvolver CleanACF
  * Plugin URI: http://redvolver.it/
- * Description: Wordpress Plugin to clean unused ACF field.
+ * Description: Wordpress Plugin to clean flush  unused ACF field
  * Version: 0.0.1
  * Author: Redvolver
  * Author URI: Wordpress Plugin to clean unused ACF field
@@ -34,8 +34,6 @@ if ( ! class_exists( 'Redvolver_Cleanacf' ) ) :
 			// Plugin Activation/Deactivation
 			register_activation_hook( __FILE__, array( $this, 'plugin_activation' ) );
 			register_deactivation_hook( __FILE__, array( $this, 'plugin_deactivation' ) );
-			//$this->capability = apply_filters( 'regenerate_thumbs_cap', 'manage_options' );
-			//include( 'includes/class-rv-db.php' );
 		}
 
 		public static function get_instance() {
@@ -156,7 +154,7 @@ if ( ! class_exists( 'Redvolver_Cleanacf' ) ) :
 		}
 
 		public function cleanACF ($postId) {
-			
+			if (!is_numeric($postId)) return false;
 			$options = get_option( 'rvcleanacf_options' );
 
 			$this->getAcfFieldKeys($postId);
