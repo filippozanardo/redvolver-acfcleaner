@@ -150,7 +150,7 @@ if ( ! class_exists( 'Redvolver_Cleanacf' ) ) :
 				 submit_button( 'Save Settings' );
 				 ?>
 				 </form>
-			<?
+			<?php
 		}
 
 		public function cleanACF ($postId) {
