@@ -1,22 +1,22 @@
-# redvolver-cleanacf
-Wordpress Plugin to clean flush  unused ACF field
+# redvolver-acfcleaner
+Wordpress Plugin for delete unused modified ACF fields.
 
 ### READ THIS FIRST
 
-The version is untested and may delete break thins, use at your own risk. 
+The version is untested and may delete break things.
 I recommend backing up your database before using.
 
 ### Installing
 
 ```
 Clone in wp-plugin
-git clone https://github.com/filippozanardo/redvolver-cleanacf.git redvolver-cleanacf
+git clone https://github.com/filippozanardo/redvolver-acfcleaner.git redvolver-acfcleaner
 ```
 or download zip and upload in wp-plugin directory
 
 ### Documentation
 
-On activation this plugin do nothing, go to Settings->Clean ACF Settings and save your preferences:
+On activation go to Settings->Clean ACF Settings and save your preferences:
 
 - Clean On Post save : on acf/save_post check unused changed meta value and delete unused
 - Clean all ACF Post Meta Before Save : delete all post meta value for the post before af save its field
@@ -24,7 +24,6 @@ On activation this plugin do nothing, go to Settings->Clean ACF Settings and sav
 This plugin for now work only on post and custom post type not for taxonomy etc etc
 
 Feel free to post comment or pull request.
-
 
 ## TODO
 
@@ -36,7 +35,3 @@ Feel free to post comment or pull request.
 ## Licence
 
 Copyright © 2017 Redvolver srl
-
-
-
-
