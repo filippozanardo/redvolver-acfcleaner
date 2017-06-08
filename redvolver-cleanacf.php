@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Redvolver CleanACF
+ * Plugin Name: Redvolver ACF Cleaner
  * Plugin URI: http://redvolver.it/
- * Description: Wordpress Plugin to clean flush  unused ACF field
+ * Description: Wordpress Plugin for delete unused modified ACF fields.
  * Version: 0.0.1
  * Author: Redvolver
- * Author URI: Wordpress Plugin to clean unused ACF field
+ * Author URI: http://redvolver.it/
  * Text Domain: redvolver
  * Domain Path: /languages/
  */
